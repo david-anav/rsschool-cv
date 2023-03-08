@@ -36,7 +36,7 @@ draw_box()  # вызов функции
 ____
 **stepik.org** [*Python Generation": a course for beginners*](https://stepik.org/course/58852/syllabus)
 
-![ *certificate* ](/assets/stepik-certificate.pdf)
+![ *certificate* ](/assets/cer.jpg)
 
 ## Languages ##
 ____

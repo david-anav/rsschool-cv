@@ -1,2 +1,2 @@
-https://github.com/david-anav/rsschool-cv/cv
+https://david-anav.github.io/rsschool-cv/cv
 
