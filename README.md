@@ -1,1 +1,2 @@
-https://github.com/david-anav/rsschool-cv/blob/gh-pages/cv.md
+https://github.com/david-anav/rsschool-cv/cv
+
