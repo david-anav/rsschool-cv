@@ -1,4 +1,4 @@
-![*Artyom Migalev*](./assets/img/avatar.PNG)
+![*Artyom Migalev*](./assets/avatar_cv.jpg)
 # *Migalyov Artyom* #
 
 ****
@@ -36,7 +36,7 @@ draw_box()  # вызов функции
 ____
 **stepik.org** [*Python Generation": a course for beginners*](https://stepik.org/course/58852/syllabus)
 
-![ *certificate* ](/assets/img/stepik-certificate-58852-8cba4e4.png)
+![ *certificate* ](./assets/cer.jpg)
 
 ## Languages ##
 ____
