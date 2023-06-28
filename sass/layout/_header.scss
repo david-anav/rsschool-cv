@@ -30,9 +30,13 @@
                 max-width: 100%;
                 padding-left: 0;
                 .list_nav {
+                    a {
+                        color: #3D2E7C;
+                        font-weight: 700;
+                        text-decoration: none;
+
+                    }
                     list-style: none;
-                    color: #3D2E7C;
-                    font-weight: 700;
                 }
 
             }
