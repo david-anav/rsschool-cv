@@ -24,13 +24,14 @@
 .educ_cour {
     .stepik {
         padding: 10px 0;
+        width: 100%;
         .name_cour {
             a {
                 text-decoration: none;
             }
         }
         .cert {
-            width: 860px;
+            max-width: 50%;
 
         }
     }

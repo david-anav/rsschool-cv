@@ -392,12 +392,13 @@ section {
 
 .educ_cour .stepik {
   padding: 10px 0;
+  width: 100%;
 }
 .educ_cour .stepik .name_cour a {
   text-decoration: none;
 }
 .educ_cour .stepik .cert {
-  width: 860px;
+  max-width: 50%;
 }
 
 .languges .lang {
