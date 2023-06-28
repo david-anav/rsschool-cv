@@ -310,7 +310,7 @@ template {
 
 body {
   max-width: 1280px;
-  background-color: cadetblue;
+  background-color: #062B14;
   margin: 0 auto;
 }
 
@@ -320,17 +320,52 @@ body {
 
 section {
   border-width: 5px;
+  border-color: #4893A4;
   border-style: double;
   border-radius: 20px;
   margin: 20px 0;
   padding: 0 20px;
 }
 
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 .name {
-  text-decoration: underline;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 62px;
-  font-style: italic;
+  font: 68px "Fira Sans", sans-serif;
+  font-weight: 900;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  color: #97D8A1;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
 }
 
 .header {
@@ -370,6 +405,8 @@ section {
 }
 .header .wrapper_header .navigation .nav_list .list_nav {
   list-style: none;
+  color: #3D2E7C;
+  font-weight: 700;
 }
 
 .contacts .contactList {
