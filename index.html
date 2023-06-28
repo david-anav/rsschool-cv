@@ -4,11 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./sass/style.css">
     <title>Migalev Artyom</title>
 </head>
 <body>
-    <h1>Artyom Migalev</h1>
-    <p>My cv</p>
+    <header class="header">
+        <div class="wrapper wrapper_header">
+            <nav class="navigation">
+                <ul class="nav_list">
+                    <li class="list_nav">Contacts</li>
+                    <li class="list_nav">About Me</li>
+                    <li class="list_nav">Skills</li>
+                    <li class="list_nav">Code example</li>
+                    <li class="list_nav">Education and courses</li>
+                    <li class="list_nav">Languages</li>
+                </ul>
+            </nav>
+            <div class="img_avatar">
+                <img class="avatar" src="/assets/avatar_cv.jpg" alt="avatar_me">
+                <h1 class="name">Artyom Migalev</h1>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="wrapper wrapper_main">
+            <section class="contacts">
+                <h2 class="title">Contacts</h2>
+                <ul class="contactList">
+                    <li class="phone"><a href="tel:+375256524789">+375(25)-652-47-89</a></li>
+                    <li class="mail"><a href="mailto:art_migalev@yahoo.com">art_migalev@yahoo.com</a></li>
+                    <li class="git"><a href="https://github.com/david-anav">david-anav</a></li>
+                    <li class="tg"><a href="https://t.me/davide_anavine">Tim</a></li>
+                </ul>
+            </section>
+            <section class="about">
+                <h2 class="title">About</h2>
+                <p class="text_about">Born and raised in a small town in Ukraine, I live and work in Minsk, Belarus, in the field of telecommunications and information. I want to learn Front-End Development in RSSchool! I have rather weak knowledge of the English language and I realize that it will be necessary to tighten it up. I've finished the online course on stepik.org <a class="cours_stepik" href="https://stepik.org/course/58852/syllabus">Python Generation": a course for beginners</a> Python Generation”: a course for beginners and received a certificate which I attach below.</p>
+            </section>
+            <section class="skills">
+                <h2 class="title">Skills</h2>
+                <ul class="skills_list">
+                    <li class="name_sk">Python</li>
+                    <li class="name_sk">Windows OS</li>
+                    <li class="name_sk">Linux OS</li>
+                    <li class="name_sk">Microsoft Office</li>
+                </ul>
+            </section>
+            <section class="example">
+                <h2 class="title">Code example</h2>
+                <div class="code">
+                    <pre>
+                        <code>
+                            # объявление функции
+                                def draw_box():
+                                    print('*'*10,)
+                                    for i in range(12):
+                                        print('*',' ' * 6,'*')
+                                    print('*'*10)
+
+
+                                draw_box()  # вызов функции
+                        </code>
+                    </pre>
+                </div>
+            </section>
+            <section class="educ_cour">
+                <h2 class="title">Education and courses</h2>
+                <div class="stepik">
+                    <h3 class="name_cour"><a href="https://stepik.org/course/58852/syllabus">Python Generation": a course for beginners</a></h3>
+                    <img class="cert" src="/assets/cer.jpg" alt="'Python Generation': a course for beginners">
+                </div>
+            </section>
+            <section class="languges">
+                <h2 class="title">Langues</h2>
+                <div class="lang">
+                    <h3 class="name_lang">Russian - Native </h3>
+                    <object data="/assets/flag/icons8-российская-федерация-48.png"></object>
+                </div>
+                <div class="lang">
+                    <h3 class="name_lang">Ukraine - Native </h3>
+                    <object data="/assets/flag/icons8-украина-48.png"></object>
+                </div>
+                <div class="lang">
+                    <h3 class="name_lang_en">English - Basic </h3>
+                    <object data="/assets/flag/icons8-сша-48.png"></object>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="git"><a href="https://github.com/david-anav">david-anav</a></div>
+        <div class="year"><p>2023</p></div>
+        <div class="rs_cours"><a href="https://rs.school/js/"><img class="logo" src="/assets/svg/rs_school_js.svg" alt="rs_school_js"></a></div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,18 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    .git {
+        a {
+            text-decoration: none;
+        }
+    }
+    .rs_cours{
+        .logo {
+            width: 130px;
+            height: 50px;
+        }
+    }
+}
