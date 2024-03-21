@@ -22,17 +22,28 @@
     font-weight: 900;
     src: url('assets\fonts\roboto-v30-latinroboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.name {
-    font: 68px "Fira Sans", sans-serif;
-    font-weight: 900;
-}
+
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 23px;
+    font-size: 16px;
     font-weight: 400;
-    color: #554470;
+    color: black;
 }
-.title {
-    font-size: 36px;
+
+.name-cv{
+    font-family: $primaryFont;
+    font-size: $sizeName-font;
+    font-weight: 400;
+    letter-spacing: 6px;
+    margin: 0;
+}
+.subtitle{
+    font-size: $sbttlSection;
+    letter-spacing: 6px;
     font-weight: 700;
+}
+.sctn-title{
+    font-size: $ttlSection;
+    font-family: $sectionTitle;
+    font-weight: 600;
 }

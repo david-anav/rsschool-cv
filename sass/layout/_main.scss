@@ -1,51 +1,52 @@
-.contacts {
-    .contactList {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        a {
-            text-decoration: none;
-        }
-    }
-}
-.about {
-    .text_about {
-        padding: 10px;
-    }
-}
-.skills {
-    .skills_list {
-        .name_sk {
-            list-style: none;
-        }
-    }
-}
-.educ_cour {
-    .stepik {
-        padding: 10px 0;
-        width: 100%;
-        .name_cour {
-            a {
-                text-decoration: none;
-            }
-        }
-        .cert {
-            max-width: 50%;
+.main {
+  .hdr__wrapper {
+    display: flex;
+    flex-direction: row;
+    .grid_main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content;
+      grid-auto-columns: 1fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      overflow: hidden;
 
+      section {
+        position: relative;
+        
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: grey;
+          z-index: 1;
         }
+        //*Row border
+        &::after {
+          inline-size: 100vw;
+          block-size: 2px;
+          inset-inline-start: 0;
+          inset-block-start: calc(calc(2rem / 2) * -1);
+        }
+        //*colum border
+        &::before {
+          inline-size: 2px;
+          block-size: 100vh;
+          inset-inline-start: -1rem;
+        }
+      }
+
     }
-}
-.languges {
-    .lang {
-        display: flex;
-        flex-direction: row;
-        padding: 10px 0;
-        .name_lang {
-            margin-right: 20px;
+
+    .list {
+      padding: 0;
+      list-style: none;
+      li {
+        margin-top: 10px;
+        a {
+          text-decoration: none;
         }
-        .name_lang_en {
-            margin-right: 32px;
-        }
+      }
     }
+  }
 }
