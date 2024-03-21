@@ -310,7 +310,7 @@ template {
 
 body {
   max-width: 1280px;
-  background-color: #e6e6e6;
+  background-color: #fffbfb;
 }
 
 .wrapper {
@@ -452,6 +452,9 @@ body {
 }
 .main .hdr__wrapper .list .python a {
   margin-right: 5px;
+}
+.main .hdr__wrapper .list .python .python-certificate {
+  cursor: pointer;
 }
 .main .hdr__wrapper .list li {
   margin-top: 20px;
