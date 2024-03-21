@@ -1,101 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./sass/style.css">
-    <title>Migalev Artyom</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./sass/style.css" />
+    <title>Migalyov Artyom</title>
+  </head>
+  <body>
     <header class="header">
-        <div class="wrapper wrapper_header">
-            <nav class="navigation">
-                <ul class="nav_list">
-                    <li class="list_nav"><a href="#contacts">Contacts</a></li>
-                    <li class="list_nav"><a href="#about">About Me</a></li>
-                    <li class="list_nav"><a href="#skills">Skills</a></li>
-                    <li class="list_nav"><a href="#example">Code example</a></li>
-                    <li class="list_nav"><a href="#educ">Education and courses</a></li>
-                    <li class="list_nav"><a href="#lang">Languages</a></li>
-                </ul>
-            </nav>
-            <div class="img_avatar">
-                <img class="avatar" src="./assets/avatar_cv.jpg" alt="avatar_me">
-                <h1 class="name">Artyom Migalev</h1>
-            </div>
+      <div class="hdr__wrapper wrapper">
+        <div class="hdr__cv">
+          <h1 class="name-cv">
+            ARTYOM
+            <span class="surname" style="font-weight: 800;font-size: 38px;"
+              >MIGALYOV</span
+            >
+          </h1>
+          <span class="subtitle">JUNIOR DEVELOPER</span>
         </div>
+        <div class="cv-card">
+          <img src="./assets/avatar_cv.jpg" alt="I am" class="avatar" />
+        </div>
+      </div>
     </header>
     <main class="main">
-        <div class="wrapper wrapper_main">
-            <section class="contacts" id="contacts">
-                <h2 class="title">Contacts</h2>
-                <ul class="contactList">
-                    <li class="phone"><a href="tel:+375256524789">+375(25)-652-47-89</a></li>
-                    <li class="mail"><a href="mailto:art_migalev@yahoo.com">art_migalev@yahoo.com</a></li>
-                    <li class="git"><a href="https://github.com/david-anav">david-anav</a></li>
-                    <li class="tg"><a href="https://t.me/davide_anavine">Tim</a></li>
-                </ul>
-            </section>
-            <section class="about" id="about">
-                <h2 class="title">About</h2>
-                <p class="text_about">Born and raised in a small town in Ukraine, I live and work in Minsk, Belarus, in the field of telecommunications and information. I want to learn Front-End Development in RSSchool! I have rather weak knowledge of the English language and I realize that it will be necessary to tighten it up. I've finished the online course on stepik.org <a class="cours_stepik" href="https://stepik.org/course/58852/syllabus">Python Generation": a course for beginners</a> Python Generation”: a course for beginners and received a certificate which I attach below.</p>
-            </section>
-            <section class="skills" id="skills">
-                <h2 class="title">Skills</h2>
-                <ul class="skills_list">
-                    <li class="name_sk">Python</li>
-                    <li class="name_sk">Windows OS</li>
-                    <li class="name_sk">Linux OS</li>
-                    <li class="name_sk">Microsoft Office</li>
-                </ul>
-            </section>
-            <section class="example" id="example">
-                <h2 class="title">Code example</h2>
-                <div class="code">
-                    <pre>
-                        <code>
-                            # объявление функции
-                                def draw_box():
-                                    print('*'*10,)
-                                    for i in range(12):
-                                        print('*',' ' * 6,'*')
-                                    print('*'*10)
+      <div class="hdr__wrapper wrapper">
+        <div class="grid_main">
+          <section class="contact">
+            <ul class="contact-list list">
+              <li class="list__inf">
+                <object data="./assets/svg/phone-solid.svg"></object>
+                <a href="tel:375296893069">+ 375 (29) 689-30-69</a>
+              </li>
+              <li class="list__inf">
+                <object data="./assets/svg/mail.svg"></object>
+                <a href="mailto:art_migalev@yahoo.com">art_migalev@yahoo.com</a>
+              </li>
+              <li class="list__inf">
+                <object data="./assets/svg/github.svg"></object>
+                <a href="https://github.com/artMigalyow">artMigalyow</a>
+              </li>
+              <li class="list__inf">
+                <object data="./assets/svg/telegram.svg"></object>
+                <a href="https://t.me/usernameToUpperCase">*****</a>
+              </li>
+            </ul>
+          </section>
+          <section class="about-me">
+            <h3 class="sctn-title">PROFILE</h3>
+            <p class="abt-descriptions">
+              Born and raised in a small town in Ukraine, I live and work in
+              Minsk, Belarus, in the field of telecommunications and
+              information. I have rather weak knowledge of the English language
+              and I realize that it will be necessary to tighten it up.I am
+              proactive in writing and optimizing code.There is a great desire
+              to develop and achieve something new.
+            </p>
+          </section>
+          <section class="skills">
+            <h3 class="sctn-title">SKILLS</h3>
+            <ul class="skls-list list">
+              <li>JS</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Python</li>
+              <li>Windows OS</li>
+              <li>Linux OS</li>
+              <li>Microsoft Office</li>
+              <li>Git</li>
+            </ul>
+          </section>
+          <section class="experience">
+            <h3 class="sctn-title">Experience</h3>
+            <ul class="exper-list list">
+              <li>
+                <h4 class="job">DELTA</h4>
+                <span class="prof">Technical support staff</span>
+              </li>
+              <li>
+                <h4 class="job">AKKO</h4>
+                <span class="prof">Engineer</span>
+              </li>
+              <li>
+                <h4 class="job">БЕЛСВЯЗЬСЕРВИС</h4>
+                <span class="prof">Technical</span>
+              </li>
+            </ul>
+          </section>
+          <section class="education">
+            <h3 class="sctn-title">Education and courses</h3>
+            <ul class="edctn-list list">
+              <li class="python">
+                <a href="https://stepik.org/course/58852/syllabus"
+                  >Python Generation": a course for beginners</a
+                >
+                <img
+                  class="python-certificate"
+                  style="width: 100px"
+                  src="./assets/cer.jpg"
+                  alt="certificate"
+                />
+              </li>
+              <li class="js">
+                <a href="https://rs.school/">JS / FRONT-END</a>
+              </li>
+            </ul>
+          </section>
 
-
-                                draw_box()  # вызов функции
-                        </code>
-                    </pre>
-                </div>
-            </section>
-            <section class="educ_cour" id="educ">
-                <h2 class="title">Education and courses</h2>
-                <div class="stepik">
-                    <h3 class="name_cour"><a href="https://stepik.org/course/58852/syllabus">Python Generation": a course for beginners</a></h3>
-                    <img class="cert" src="./assets/cer.jpg" alt="'Python Generation': a course for beginners">
-                </div>
-            </section>
-            <section class="languges" id="lang">
-                <h2 class="title">Langues</h2>
-                <div class="lang">
-                    <h3 class="name_lang">Russian - Native </h3>
-                    <object data="./assets/flag/icons8-российская-федерация-48.png"></object>
-                </div>
-                <div class="lang">
-                    <h3 class="name_lang">Ukraine - Native </h3>
-                    <object data="./assets/flag/icons8-украина-48.png"></object>
-                </div>
-                <div class="lang">
-                    <h3 class="name_lang_en">English - Basic </h3>
-                    <object data="./assets/flag/icons8-сша-48.png"></object>
-                </div>
-            </section>
+          <section class="lang">
+            <h3 class="sctn-title">Languages</h3>
+            <ul class="lng-list list">
+              <li>Russian - Native</li>
+              <li>Ukrainian - Native</li>
+              <li>English -Basic</li>
+            </ul>
+          </section>
         </div>
+      </div>
     </main>
-    <footer class="footer">
-        <div class="git"><a href="https://github.com/david-anav">david-anav</a></div>
-        <div class="year"><p>2023</p></div>
-        <div class="rs_cours"><a href="https://rs.school/js/"><img class="logo" src="./assets/svg/rs_school_js.svg" alt="rs_school_js"></a></div>
-    </footer>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

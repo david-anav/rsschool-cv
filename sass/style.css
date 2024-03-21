@@ -310,21 +310,12 @@ template {
 
 body {
   max-width: 1280px;
-  background-color: #e6e6e6;
-  margin: 0 auto;
+  background-color: #fffbfb;
 }
 
 .wrapper {
+  max-width: 1060px;
   margin: 0 auto;
-}
-
-section {
-  border-width: 5px;
-  border-color: #554470;
-  border-style: double;
-  border-radius: 20px;
-  margin: 20px 0;
-  padding: 0 20px;
 }
 
 * {
@@ -337,7 +328,7 @@ section {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-700 - latin */
 @font-face {
@@ -345,7 +336,7 @@ section {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-900 - latin */
 @font-face {
@@ -353,120 +344,131 @@ section {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.name {
-  font: 68px "Fira Sans", sans-serif;
-  font-weight: 900;
-}
-
 * {
   font-family: "Roboto", sans-serif;
-  font-size: 23px;
+  font-size: 16px;
   font-weight: 400;
-  color: #554470;
+  color: black;
 }
 
-.title {
-  font-size: 36px;
+.name-cv {
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 25px;
+  letter-spacing: 15px;
   font-weight: 700;
+}
+
+.sctn-title {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.job {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .header {
-  max-width: 100%;
-  margin: 0 auto;
+  background: rgba(100, 94, 94, 0.7490196078);
+  padding: 50px 0 50px 0;
 }
-.header .wrapper_header {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.header .wrapper_header .img_avatar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.header .wrapper_header .img_avatar .avatar {
-  width: 380px;
-  height: 507px;
-  border-radius: 4%;
-}
-.header .wrapper_header .img_avatar .name {
-  margin-left: 200px;
-  padding: 10px;
-}
-.header .wrapper_header .navigation {
-  max-width: 100%;
-}
-.header .wrapper_header .navigation .nav_list {
+.header .hdr__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 100%;
-  padding-left: 0;
 }
-.header .wrapper_header .navigation .nav_list .list_nav {
-  list-style: none;
+.header .hdr__wrapper .hdr__cv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.header .wrapper_header .navigation .nav_list .list_nav a {
-  color: #3D2E7C;
-  font-weight: 700;
-  text-decoration: none;
+.header .hdr__wrapper .cv-card {
+  background: #000;
+  width: 170px;
+  height: 170px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.header .hdr__wrapper .cv-card .avatar {
+  width: inherit;
+  height: inherit;
 }
 
-.contacts .contactList {
-  list-style: none;
+.main {
+  margin-bottom: 50px;
+}
+.main .hdr__wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
-.contacts .contactList a {
-  text-decoration: none;
+.main .hdr__wrapper .grid_main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content;
+  grid-auto-columns: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  overflow: hidden;
+  margin-top: 10px;
 }
-
-.about .text_about {
-  padding: 10px;
+.main .hdr__wrapper .grid_main section {
+  position: relative;
 }
-
-.skills .skills_list .name_sk {
+.main .hdr__wrapper .grid_main section::before, .main .hdr__wrapper .grid_main section::after {
+  content: "";
+  position: absolute;
+  background-color: grey;
+  z-index: 1;
+}
+.main .hdr__wrapper .grid_main section::after {
+  inline-size: 100vw;
+  block-size: 2px;
+  inset-inline-start: 0;
+  inset-block-start: -1rem;
+}
+.main .hdr__wrapper .grid_main section::before {
+  inline-size: 2px;
+  block-size: 100vh;
+  inset-inline-start: -1rem;
+}
+.main .hdr__wrapper .list {
   list-style: none;
 }
-
-.educ_cour .stepik {
-  padding: 10px 0;
-  width: 100%;
-}
-.educ_cour .stepik .name_cour a {
-  text-decoration: none;
-}
-.educ_cour .stepik .cert {
-  max-width: 50%;
-}
-
-.languges .lang {
+.main .hdr__wrapper .list .list__inf {
   display: flex;
   flex-direction: row;
-  padding: 10px 0;
-}
-.languges .lang .name_lang {
-  margin-right: 20px;
-}
-.languges .lang .name_lang_en {
-  margin-right: 32px;
-}
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  margin: 20px 0;
+  gap: 20px;
 }
-.footer .git a {
+.main .hdr__wrapper .list .python a {
+  margin-right: 5px;
+}
+.main .hdr__wrapper .list .python .python-certificate {
+  cursor: pointer;
+}
+.main .hdr__wrapper .list li {
+  margin-top: 20px;
+}
+.main .hdr__wrapper .list li object {
+  width: 25px;
+  height: 25px;
+}
+.main .hdr__wrapper .list li a {
   text-decoration: none;
 }
-.footer .rs_cours .logo {
-  width: 130px;
-  height: 50px;
+.main .hdr__wrapper .skls-list,
+.main .hdr__wrapper .exper-list,
+.main .hdr__wrapper .edctn-list,
+.main .hdr__wrapper .lng-list {
+  list-style: disc;
 }/*# sourceMappingURL=style.css.map */

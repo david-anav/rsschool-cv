@@ -1,20 +1,13 @@
 body {
-    max-width: 1280px;
-    background-color: #e6e6e6;
-    margin: 0 auto;
+    max-width: $szBody;
+    background-color: #fffbfb;
 
 }
 .wrapper {
+    max-width: $szWrapper;
     margin: 0 auto;
 }
-section{
-    border-width: 5px;
-    border-color: #554470;
-    border-style: double;
-    border-radius: 20px;
-    margin: 20px 0;
-    padding: 0 20px;
-}
+
 * {
     scroll-behavior: smooth;
 }
