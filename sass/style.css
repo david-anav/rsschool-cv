@@ -328,7 +328,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-700 - latin */
 @font-face {
@@ -336,7 +336,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* roboto-900 - latin */
 @font-face {
@@ -344,7 +344,7 @@ body {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: url("assets\fontsroboto-v30-latinroboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/assets/fonts/roboto-v30-latin/roboto-v30-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 * {
   font-family: "Roboto", sans-serif;
@@ -355,21 +355,26 @@ body {
 
 .name-cv {
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 400;
-  letter-spacing: 6px;
+  letter-spacing: 35px;
   margin: 0;
 }
 
 .subtitle {
-  font-size: 18px;
-  letter-spacing: 6px;
+  font-size: 25px;
+  letter-spacing: 15px;
   font-weight: 700;
 }
 
 .sctn-title {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.job {
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -394,6 +399,9 @@ body {
   border-radius: 100px;
 }
 
+.main {
+  margin-bottom: 50px;
+}
 .main .hdr__wrapper {
   display: flex;
   flex-direction: row;
@@ -406,6 +414,7 @@ body {
   gap: 10px 10px;
   grid-auto-flow: row;
   overflow: hidden;
+  margin-top: 10px;
 }
 .main .hdr__wrapper .grid_main section {
   position: relative;
@@ -428,12 +437,30 @@ body {
   inset-inline-start: -1rem;
 }
 .main .hdr__wrapper .list {
-  padding: 0;
   list-style: none;
 }
+.main .hdr__wrapper .list .list__inf {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.main .hdr__wrapper .list .python a {
+  margin-right: 5px;
+}
 .main .hdr__wrapper .list li {
-  margin-top: 10px;
+  margin-top: 20px;
+}
+.main .hdr__wrapper .list li object {
+  width: 25px;
+  height: 25px;
 }
 .main .hdr__wrapper .list li a {
   text-decoration: none;
+}
+.main .hdr__wrapper .skls-list,
+.main .hdr__wrapper .exper-list,
+.main .hdr__wrapper .edctn-list,
+.main .hdr__wrapper .lng-list {
+  list-style: disc;
 }/*# sourceMappingURL=style.css.map */
