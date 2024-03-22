@@ -2,13 +2,40 @@ body {
     max-width: $szBody;
     background-color: #fffbfb;
 
+    @include media-tablet {
+        max-width: $tabletWidthBody;
+        overflow-x: hidden;
+        .modal-bg {
+            .md-dialog {
+                max-width: $tabletWidthWrapper;
+            }
+        }
+    }
+    @include media-mobile {
+        max-width: $mobileWidthBody;
+        overflow-x: hidden;
+    }
 }
 .wrapper {
     max-width: $szWrapper;
     margin: 0 auto;
+    @include media-tablet {
+        max-width: $tabletWidthWrapper;
+        .hdr__cv {
+            width: min-content;
+        }
+        .python {
+            a {
+                display: block;
+                flex-wrap: nowrap;
+            }
+        }
+    }
+    @include media-mobile {
+        max-width: $mobileWidthWrapper;
+    }
 }
 
 * {
     scroll-behavior: smooth;
 }
-

@@ -1,0 +1,8 @@
+//**** Media query //
+
+@mixin media-tablet {
+    @media ( max-width:$tabletWidthBody) {@content; }
+}
+@mixin media-mobile {
+    @media ( max-width: $mobileWidthBody) {@content; }
+}

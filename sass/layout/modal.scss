@@ -15,14 +15,23 @@
     height: 504px;
     border: none;
     border-radius: 40px;
-    // background: $color-bg_body;
     margin: 198px auto;
     padding: 16px;
     z-index: 3;
 
+
+
     #certificate-python {
       width: 100%;
       height: inherit;
+      border-radius: 40px;
+
     }
   }
 }
+
+// @include media-tablet{
+//   .md-dialog{
+//     max-width: $tabletWidthWrapper;
+//   }
+// }

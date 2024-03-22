@@ -22,6 +22,7 @@
 .modal-bg .md-dialog #certificate-python {
   width: 100%;
   height: inherit;
+  border-radius: 40px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -338,10 +339,43 @@ body {
   max-width: 1280px;
   background-color: #fffbfb;
 }
+@media (max-width: 768px) {
+  body {
+    max-width: 768px;
+    overflow-x: hidden;
+  }
+  body .modal-bg .md-dialog {
+    max-width: 688px;
+  }
+}
+@media (max-width: 380px) {
+  body {
+    max-width: 380px;
+    overflow-x: hidden;
+  }
+}
 
 .wrapper {
   max-width: 1060px;
   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 688px;
+  }
+  .wrapper .hdr__cv {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .wrapper .python a {
+    display: block;
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 380px) {
+  .wrapper {
+    max-width: 348px;
+  }
 }
 
 * {
