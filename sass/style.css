@@ -348,7 +348,7 @@ body {
     max-width: 688px;
   }
 }
-@media (max-width: 380px) {
+@media ((max-width: 670px) and (min-width: 380px)) {
   body {
     max-width: 380px;
     overflow-x: hidden;
@@ -372,7 +372,7 @@ body {
     flex-wrap: nowrap;
   }
 }
-@media (max-width: 380px) {
+@media ((max-width: 670px) and (min-width: 380px)) {
   .wrapper {
     max-width: 348px;
     overflow: hidden;
@@ -540,7 +540,7 @@ body {
   list-style: disc;
 }
 
-@media (max-width: 380px) {
+@media ((max-width: 670px) and (min-width: 380px)) {
   body {
     overflow: hidden;
   }

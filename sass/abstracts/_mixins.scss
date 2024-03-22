@@ -4,5 +4,5 @@
     @media ( max-width:$tabletWidthBody) {@content; }
 }
 @mixin media-mobile {
-    @media ( max-width: $mobileWidthBody) {@content; }
+    @media ( (max-width: 670px) and (min-width: 380px)) {@content; }
 }
