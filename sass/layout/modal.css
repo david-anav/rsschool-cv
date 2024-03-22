@@ -1,0 +1,26 @@
+.modal-bg {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  top: 0;
+}
+.modal-bg .md-dialog {
+  display: flex;
+  width: 800px;
+  height: 504px;
+  border: none;
+  border-radius: 40px;
+  margin: 198px auto;
+  padding: 16px;
+  z-index: 3;
+}
+.modal-bg .md-dialog #certificate-python {
+  width: 100%;
+  height: inherit;
+  border-radius: 40px;
+}/*# sourceMappingURL=modal.css.map */
