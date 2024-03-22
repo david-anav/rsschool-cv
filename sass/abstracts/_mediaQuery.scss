@@ -1,25 +1,25 @@
-@include media-mobile{
-  body{
+@include media-mobile {
+  body {
     overflow: hidden;
-    .header{
-      .hdr__wrapper{
+    .header {
+      .hdr__wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 20px ;
-        .hdr__cv{
+        gap: 20px;
+        .hdr__cv {
           width: inherit;
           display: flex;
           flex-direction: column;
           text-align: center;
-          .name-cv{
+          .name-cv {
             font-size: 24px;
             letter-spacing: 26px;
           }
-          .surname{
+          .surname {
             font-size: 24px;
             letter-spacing: 26px;
           }
-          .subtitle{
+          .subtitle {
             font-size: 20px;
             letter-spacing: 10px;
             font-weight: 400;
@@ -28,5 +28,4 @@
       }
     }
   }
-
 }
