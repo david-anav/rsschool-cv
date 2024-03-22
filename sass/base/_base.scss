@@ -1,6 +1,9 @@
 body {
     max-width: $szBody;
     background-color: #fffbfb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @include media-tablet {
         max-width: $tabletWidthBody;

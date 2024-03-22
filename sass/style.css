@@ -338,6 +338,9 @@ template {
 body {
   max-width: 1280px;
   background-color: #fffbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media (max-width: 768px) {
   body {
@@ -576,7 +579,7 @@ body {
     padding-left: 0;
   }
   body .modal-bg {
-    width: inherit;
+    width: 380px;
   }
   body .modal-bg .md-dialog {
     max-width: 380px;
