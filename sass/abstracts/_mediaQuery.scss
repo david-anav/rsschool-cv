@@ -1,6 +1,6 @@
 @include media-mobile {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
     .header {
       .hdr__wrapper {
         flex-direction: column;
@@ -25,6 +25,25 @@
             font-weight: 400;
           }
         }
+      }
+    }
+    .main{
+      .hdr__wrapper{
+        .grid_main{
+          display: block;
+          flex-direction: column;
+          .contact{
+            .contact-list{
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .modal-bg{
+      width: inherit;
+      .md-dialog{
+        max-width: 380px;
       }
     }
   }

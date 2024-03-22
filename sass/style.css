@@ -375,7 +375,7 @@ body {
 @media ((max-width: 670px) and (min-width: 380px)) {
   .wrapper {
     max-width: 348px;
-    overflow: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -542,7 +542,7 @@ body {
 
 @media ((max-width: 670px) and (min-width: 380px)) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   body .header .hdr__wrapper {
     flex-direction: column;
@@ -567,5 +567,18 @@ body {
     font-size: 20px;
     letter-spacing: 10px;
     font-weight: 400;
+  }
+  body .main .hdr__wrapper .grid_main {
+    display: block;
+    flex-direction: column;
+  }
+  body .main .hdr__wrapper .grid_main .contact .contact-list {
+    padding-left: 0;
+  }
+  body .modal-bg {
+    width: inherit;
+  }
+  body .modal-bg .md-dialog {
+    max-width: 380px;
   }
 }/*# sourceMappingURL=style.css.map */
