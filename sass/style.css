@@ -375,6 +375,7 @@ body {
 @media (max-width: 380px) {
   .wrapper {
     max-width: 348px;
+    overflow: hidden;
   }
 }
 
@@ -419,6 +420,11 @@ body {
   font-weight: 400;
   letter-spacing: 35px;
   margin: 0;
+}
+
+.surname {
+  font-size: 38px;
+  font-weight: 800;
 }
 
 .subtitle {
@@ -532,4 +538,34 @@ body {
 .main .hdr__wrapper .edctn-list,
 .main .hdr__wrapper .lng-list {
   list-style: disc;
+}
+
+@media (max-width: 380px) {
+  body {
+    overflow: hidden;
+  }
+  body .header .hdr__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  body .header .hdr__wrapper .hdr__cv {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  body .header .hdr__wrapper .hdr__cv .name-cv {
+    font-size: 24px;
+    letter-spacing: 26px;
+  }
+  body .header .hdr__wrapper .hdr__cv .surname {
+    font-size: 24px;
+    letter-spacing: 26px;
+  }
+  body .header .hdr__wrapper .hdr__cv .subtitle {
+    font-size: 20px;
+    letter-spacing: 10px;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=style.css.map */
