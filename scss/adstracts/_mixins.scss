@@ -1,0 +1,37 @@
+@mixin screen {
+  @media only screen and (max-width: $mediaSize-screen) {
+    @content;
+  }
+}
+@mixin media-table {
+  @media ((max-width: $mediaSize-tablet) and (min-width: 600px)) {
+    @content;
+  }
+}
+@mixin media-mobile {
+  @media ((max-width: 600px) and (min-width: $mediaSize-mobile)) {
+    @content;
+  }
+}
+
+//* -------FLEX------//
+@mixin flxRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+//*------FONT--------//
+@mixin headerTitle {
+  font-family: $textPrimary, sans-serif;
+  font-weight: 400;
+  font-size: $textTitle;
+}
+@mixin sectionTitle {
+  font-family: $textPrimary, sans-serif;
+  font-size: $textSize-sectionTitle;
+
+}

@@ -1,0 +1,62 @@
+.main {
+  .main__wrapper {
+    .grid__block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content;
+      grid-auto-columns: 1fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      overflow: hidden;
+      margin-top: 10px;
+
+      @include media-mobile{
+        @include flexColumn;
+
+      }
+
+      .sctn {
+        padding-left: 10px;
+      }
+      .prof {
+        .descriptions {
+          padding-left: 1.5rem;
+        }
+      }
+
+      .contact {
+        .contact-list {
+          margin-bottom: 0;
+          padding-left: 1.5rem;
+          @include flexColumn;
+          gap: 10px;
+          @include media-mobile{
+              margin-bottom: 15px;
+          }
+
+          .list__inf {
+            list-style: none;
+            @include flxRow;
+            gap: 20px;
+            object {
+              width: 16px;
+              height: 16px;
+            }
+          }
+        }
+      }
+      .education {
+        .list {
+          .python {
+            flex-grow: inherit;
+            .python-certificate {
+              width: 10%;
+              cursor: pointer;
+              position: absolute;
+            }
+          }
+        }
+      }
+    }
+  }
+}
