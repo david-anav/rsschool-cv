@@ -1,0 +1,29 @@
+.header{
+  @include flxRow;
+  background-color: rgba(100, 94, 94, 0.7490196078);
+  padding: 20px;
+
+  .header__wrapper{
+    width: 100%;
+    @include flxRow;
+    @include media-mobile{
+      flex-direction: column;
+      gap: 10px;
+    }
+    justify-content: space-between;
+    .block__title{
+      @include flexColumn;
+      gap: 20px;
+      @include media-mobile{
+        gap: 10px;
+      }
+    }
+    .block__avatar{
+      width: 150px;
+      height: 150px;
+      background-image: url('../assets/avatar_cv.jpg');
+      background-size: cover;
+      border-radius: 100px;
+    }
+  }
+}
