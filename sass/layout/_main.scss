@@ -1,0 +1,80 @@
+.main {
+  margin-bottom: 50px;
+  .hdr__wrapper {
+    display: flex;
+    flex-direction: row;
+    .grid_main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content;
+      grid-auto-columns: 1fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      overflow: hidden;
+      margin-top: 10px;
+
+      section {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: grey;
+          z-index: 1;
+        }
+        //*Row border
+        &::after {
+          inline-size: 100vw;
+          block-size: 2px;
+          inset-inline-start: 0;
+          inset-block-start: calc(calc(2rem / 2) * -1);
+        }
+        //*colum border
+        &::before {
+          inline-size: 2px;
+          block-size: 100vh;
+          inset-inline-start: -1rem;
+        }
+      }
+    }
+
+    .list {
+      // padding-left: 10px;
+      list-style: none;
+
+      .list__inf {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+      }
+      .python {
+        a {
+          margin-right: 5px;
+        }
+        .python-certificate {
+          cursor: pointer;
+          width: 100px;
+        }
+      }
+      li {
+        margin-top: 20px;
+
+        object {
+          width: 25px;
+          height: 25px;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+    .skls-list,
+    .exper-list,
+    .edctn-list,
+    .lng-list {
+      list-style: disc;
+    }
+  }
+}

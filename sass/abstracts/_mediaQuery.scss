@@ -1,0 +1,50 @@
+@include media-mobile {
+  body {
+    overflow-x: hidden;
+    .header {
+      .hdr__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        .hdr__cv {
+          width: inherit;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          .name-cv {
+            font-size: 24px;
+            letter-spacing: 26px;
+          }
+          .surname {
+            font-size: 24px;
+            letter-spacing: 26px;
+          }
+          .subtitle {
+            font-size: 20px;
+            letter-spacing: 10px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .main{
+      .hdr__wrapper{
+        .grid_main{
+          display: block;
+          flex-direction: column;
+          .contact{
+            .contact-list{
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .modal-bg{
+      width: 380px;
+      .md-dialog{
+        max-width: 380px;
+      }
+    }
+  }
+}
