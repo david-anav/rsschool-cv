@@ -1,3 +1,34 @@
+<<<<<<< HEAD
+
+const titleSection = document.querySelectorAll(".sctn-title");
+const nameHeader = document.querySelector(".header__name");
+const certificate =  document.querySelector(".python-certificate");;
+window.onload = () =>{
+  weightToSection(titleSection);
+
+
+  certificate.addEventListener("click", (evnt) => {
+    if (evnt.target) {
+      createdModal(certificate);
+    }
+    const modal = document.querySelector(".modal-bg");
+    modal.addEventListener("click", (ev) => {
+      if (modal.contains(ev.target)) {
+        modal.classList.remove("modal-bg");
+      }
+    });
+  });
+
+
+}
+
+function weightToSection(title){
+  title.forEach(element => {
+    element.textContent = element.textContent.toUpperCase();
+
+  });
+}
+=======
 const certif = document.querySelector(".python-certificate");
 
 window.onload = () => {
@@ -13,6 +44,7 @@ window.onload = () => {
     })
   });
 };
+>>>>>>> ae0e7a5147eb6482eb916e04a377548705891624
 
 const createdModal = (child) => {
   const fragmentModal = new DocumentFragment();

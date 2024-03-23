@@ -1,0 +1,68 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/roboto-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/roboto-v30-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.header__name {
+  @include headerTitle;
+  margin: 0;
+  letter-spacing: 1.5rem;
+  @include media-table{
+    letter-spacing: 0.5rem;
+  }
+  @include media-mobile{
+    letter-spacing: 0;
+    font-size:$textTitle-mobile;
+  }
+}
+.professional{
+  font-family: $textPrimary,sans-serif;
+  font-size: $textSubtitle;
+  font-weight: 500;
+  letter-spacing: 1rem;
+  @include media-table{
+    letter-spacing: 0.5rem;
+  }
+  @include media-mobile{
+    font-size:1.5rem;
+    letter-spacing: 5px;
+  }
+}
+a{
+  text-decoration: none;
+}
+.sctn-title{
+  margin: 0;
+  padding-left: 20px;
+  @include sectionTitle;
+
+}
+.job{
+  margin-bottom: 5px;
+}
+b{
+  font-size: $textTitle;
+  @include media-mobile{
+    font-size: $textSubtitle;
+  }
+}
